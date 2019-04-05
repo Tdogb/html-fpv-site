@@ -1,0 +1,120 @@
+/*@import "https://fonts.googleapis.com/css?family=Exo";*/
+
+:root {
+    --brand-primary: rgb(255,217,15);
+    --gray: rgb(67,67,67);
+    --blue-dark: #45818E;
+    --blue-darker: #134F5C;
+    --logo-width: 277px;
+}
+
+* {
+    font-family: Exo, sans-serif;
+    font-weight: bold;
+}
+
+div {
+    /*border-width:1px;*/
+    /*border-style:solid;*/
+    /*border-color:white;*/
+}
+
+body, ul, li {
+    margin:0;
+    padding:0;
+}
+
+p, li, h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+body {
+    background: var(--gray);
+}
+
+.wrapper {
+    width:100%;
+    /*max-width: 1200px;*/
+}
+
+header {
+    height: 10%;
+    background:black;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#accounts button {
+    background: var(--blue-dark);
+    padding:10px;
+    font-size: 12pt;
+    border-width: 0;
+    margin: 8px 10px;
+    float:right;
+}
+
+#accounts {
+    height:auto;
+    width: 100%;
+    background: var(--gray);
+}
+
+#buttons {
+    height:auto;
+}
+
+.brand-logo {
+    width: var(--logo-width);
+    vertical-align: bottom;
+}
+
+header nav {
+    float:left;
+}
+
+.logo-div {
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+header nav h2 {
+    line-height: 0;
+    text-indent:-10000px;
+    margin:0;
+}
+
+header nav li {
+    list-style-type: none;
+    float:left;
+    margin-left:20px;
+    margin-top:45px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+#carousel {
+}
+
+#carousel-list {
+    width: var(--logo-width);
+    background: var(--blue-dark);
+    margin:0;
+}
+
+#carousel-list h4 {
+    padding: 15px;
+    text-align: left;
+    margin:0;
+    color:white;
+}
+
+#carousel-list h4:hover {
+    background: var(--blue-darker);
+}
