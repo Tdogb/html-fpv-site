@@ -5,12 +5,15 @@
     --gray: rgb(67,67,67);
     --blue-dark: #45818E;
     --blue-darker: #134F5C;
-    --logo-width: 277px;
+    --logo-width: 20vw;
+    /*--logo-width: 277px;*/
+    --margin: 5%;
 }
 
 * {
     font-family: Exo, sans-serif;
     font-weight: bold;
+    outline: solid 0.25rem hsla(100, 50%, 50%, 0.5);
 }
 
 div {
@@ -29,12 +32,16 @@ p, li, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+    /*background-image: url(LogoSizing.svg);*/
+    /*background-repeat: no-repeat;*/
     background: var(--gray);
 }
 
 .wrapper {
     width:100%;
     /*max-width: 1200px;*/
+    /*margin: 0px 20px;*/
+    background: var(--gray);
 }
 
 header {
@@ -72,12 +79,17 @@ header {
 
 header nav {
     float:left;
+    display: table;
 }
 
 .logo-div {
     float:left;
-    margin:0;
-    padding:0;
+    padding-left:var(--margin);
+    margin-left:0px;
+    margin-right:0;
+    margin-top:0;
+    margin-bottom: 0;
+    background: var(--gray);
 }
 
 header nav h2 {
@@ -85,12 +97,17 @@ header nav h2 {
     text-indent:-10000px;
     margin:0;
 }
-
+header nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top:auto;
+}
 header nav li {
     list-style-type: none;
     float:left;
     margin-left:20px;
-    margin-top:45px;
+    margin-top:15px;
+    text-align: center;
 }
 
 header nav li a {
@@ -100,6 +117,7 @@ header nav li a {
 }
 
 #carousel {
+    margin-left: var(--margin);
 }
 
 #carousel-list {
@@ -117,4 +135,59 @@ header nav li a {
 
 #carousel-list h4:hover {
     background: var(--blue-darker);
+}
+
+#carousel-images {
+    overflow: hidden;
+    margin: 0;
+}
+
+#carousel-images img {
+    height: 30vw;
+    width:auto;
+    vertical-align: bottom;
+    margin: -40px 0px;
+}
+
+#categories {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px var(--margin) 0;
+}
+
+#categories ul {
+}
+
+.category {
+    background: var(--brand-primary);
+    background-image: url("Category.png");
+    background-size: cover;
+    width: 200px;
+    height:150px;
+    display:inline-block;
+}
+
+.category-title {
+    height:100%;
+    width:100%;
+    vertical-align: bottom;
+    text-align: center;
+    margin:0;
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    /*flex-direction: column-reverse;*/
+    justify-content: center;
+
+}
+
+.category-title a {
+    padding-bottom: 8px;
+    text-decoration: none;
+    color:inherit;
+}
+
+.category-title a:visited {
+    color:inherit;
 }
